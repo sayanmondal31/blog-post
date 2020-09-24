@@ -12,6 +12,16 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => CreateBlogPage()));
           },
           label: Icon(Icons.edit)),
+      // add location
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomAppBar(
+        color: Color(0xff8cba51),
+        child: Container(
+          height: 60.0,
+        ),
+        elevation: 4,
+        shape: CircularNotchedRectangle(),
+      ),
       appBar: AppBar(
         title: Text(
           "Bloggedd",
