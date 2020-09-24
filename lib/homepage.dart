@@ -6,11 +6,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton.extended(onPressed: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>CreateBlogPage()));
-      }, label: Icon(Icons.edit)),
+      floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => CreateBlogPage()));
+          },
+          label: Icon(Icons.edit)),
       appBar: AppBar(
-        title: Text("Bloggedd"),
+        title: Text(
+          "Bloggedd",
+          style: TextStyle(
+            color: Colors.green[800],
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: BlogPost(),
     );
