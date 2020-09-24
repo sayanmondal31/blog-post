@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       create: (context) => Post(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark(),
         home: HomePage(),
       ),
     );
