@@ -15,6 +15,12 @@ class HomePage extends StatelessWidget {
           label: Icon(Icons.edit)),
       appBar: AppBar(
         title: Text("Bloggedd"),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.account_tree_outlined),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: BlogPost(),
     );
